@@ -37,7 +37,7 @@ public class FakeGenerator {
             .log(LogDetail.ALL)
             .build();
 
-    static void setUpAll(LoginData user) {
+    static void sendRequest(LoginData user) {
         given()
                 .spec(requestSpec)
                 .body(user)
